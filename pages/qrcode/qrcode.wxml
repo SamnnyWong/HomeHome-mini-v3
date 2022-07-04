@@ -1,0 +1,14 @@
+<!--pages/qrcode/qrcode.wxml-->
+<!-- <button bindtap="clearStorage">一键remake</button> -->
+
+<!-- <button bindtap="logout">一键logout</button>
+<button bindtap="createQRCode">draw qr binarycode</button> -->
+
+<!-- <qr-container text="{{qrTxt}}" size="750"></qr-container> -->
+<!-- <canvas> </canvas> -->
+
+<view class="container">
+  <image style="width: 600rpx;height:250rpx" src="../../images/profile-head.jpg"></image>
+  <canvas type="2d" style="width: 200px; height: 200px;margin: 50rpx;" id="myQrcode"></canvas>
+  <text style="color: green;">HOMEHOME商城会员码</text>
+</view>
