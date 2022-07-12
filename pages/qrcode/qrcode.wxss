@@ -1,0 +1,7 @@
+/* pages/qrcode/qrcode.wxss */
+page {
+  background-color: rgb(255, 255, 255) !important;
+}
+.container{
+  display: flex;
+}
