@@ -1,0 +1,94 @@
+/* pages/oderinfo/oderinfo.wxss */
+page{
+  /* background-color: white; */
+}
+.box{
+  padding: 32rpx;
+}
+.titles{
+  font-size: 32rpx;
+  font-weight: 600;
+  color: rgb(201, 71, 71);
+}
+.cards{
+  padding: 32rpx;
+  background-color: white;
+  border-radius: 16rpx;
+}
+.cards .secend{
+  margin-top: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards .secend view{
+  margin-left: 12rpx;
+  width: 300rpx;
+}
+.fenge{
+  margin-top: 24rpx;
+  height: 2rpx;
+  background: #eee;
+}
+.fuzhi{
+  font-size: 22rpx;
+  margin-left: 12rpx;
+  background-color: rgb(233, 233, 233);
+  padding: 12rpx 16rpx;
+  border-radius: 12rpx;
+}
+
+
+
+
+
+.bigs{
+  font-size: 32rpx;
+}
+.reds{
+  color: rgb(255, 81, 0);
+}
+.flex{
+  display: flex;
+}
+.jusbet{
+  justify-content: space-between;
+}
+.margin-top{
+  margin-top: 24rpx;
+}
+.align-center{
+  align-items: center;
+}
+.gray{
+  color: #888;
+}
+.fukuan{
+  color: red;
+  border: 1rpx solid red;
+  padding: 8rpx 24rpx;
+  border-radius: 16rpx;
+}
+.blod{
+  font-weight: 600;
+}
+.small {
+  font-size: 22rpx;
+  color: #888;
+}
+.fixed {
+  position: fixed;
+  bottom: 100rpx;
+  right: 32rpx;
+  background-color: #295f45;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3rpx 3rpx 10rpx #295f45;
+}

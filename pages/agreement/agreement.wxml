@@ -1,0 +1,6 @@
+<!--pages/agreement/agreement.wxml-->
+<view class="box">
+<text>
+xxx协议
+</text>
+</view>

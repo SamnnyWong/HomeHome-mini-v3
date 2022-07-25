@@ -1,0 +1,7 @@
+/* pages/agreement/agreement.wxss */
+page{
+  background-color: white;
+}
+.box{
+  padding: 32rpx;
+}

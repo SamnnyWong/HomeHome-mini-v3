@@ -1,0 +1,80 @@
+<view class="box">
+  <view style="position: relative;">
+    <image src="../../images/index/backtop.png" style="width: 750rpx;z-index: -1;" mode="widthFix"></image>
+    <view style="position: absolute;top: {{navTop}}px;">
+      <view style="line-height: 32px;">
+        <image src="../../images/index/homehome.png" style="width: 200rpx;margin-left: 24rpx;" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+  <view class="box_children">
+    <view>
+      <view class="topBackCenterChange flex" wx:if="{{userInfo}}" style="position: relative;">
+        <image src="../../images/vip/{{LeavelClassName[membershipLevel]}}.png" class="vip" style="position: absolute;top: 0;left: 0;"></image>
+        <view class="topBackCenterChanges" style="position: absolute;top: 0;left: 0;">
+          <view class="flex align-center">
+            <image src="{{userInfo.avatarUrl}}" style="width: 102rpx;height: 102rpx;border-radius: 50%;" bindtap="navTo" data-url="/pages/my/index"></image>
+            <view class="titles {{LeavelClassName[membershipLevel]}}">{{userInfo.nickName}}</view>
+          </view>
+          <!-- {{LeavelClassName[membershipLevel]}} -->
+          <view class="huiyuan {{LeavelClassName[membershipLevel]}}" style="z-index: 999;" bindtap="navTo" data-type="navTo" data-url="/pages/score/growth">{{LeavelName[membershipLevel]}}</view>
+        </view>
+      </view>
+      <view class="topBackCenter flex" wx:else>
+        <image src="../../images/index/topcenter.png" style="width: 318rpx;height: 102rpx;"></image>
+        <view bindtap="navTo" data-type="navTo" data-url="/pages/login/login">注册/登录</view>
+      </view>
+    </view>
+    <view class="topNav" bindtap="navToMap">
+      <view class="topNav_firstChild">
+        <view class="second"><image src="/images/order-details/icon-address1.png" style="width: 32rpx;height: 32rpx;margin-right: 12rpx;"></image>HOMEHOME五金家居便利店(奥正店)</view>
+        <view class="third">山东省临沂市河东区奥正诚园南区北门入口处C5-108号</view>
+      </view>
+      <view><image src="/images/index/biao1.png" style="width:24rpx;" mode="widthFix"></image></view>
+    </view>
+    <view class="TopCenter">
+      <view class="TopCenter_children" bindtap="navTo" data-url="/pages/category/category">
+        <view class="tagging">HOMEHOME</view>
+        <view class="TopCenter_Title">五金小店</view>
+        <image src="../../images/index/wujin.png" style="width: 255rpx;" mode="widthFix"></image>
+      </view>
+      <view class="fenge"></view>
+      <view class="TopCenter_children" bindtap="navTo" data-url="">
+        <view class="tagging">新品上架</view>
+        <view class="TopCenter_Title">品质生活馆</view>
+        <image src="../../images/index/shenghuo.png" style="width: 255rpx;" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="TopCenterTwo">
+      <view class="centers" bindtap="navTo" data-url="">
+        <image src="../../images/index/c1.png" mode="widthFix"></image>
+        <view>家政维修</view>
+        <text decode="true">&ensp;</text>
+      </view>
+      <view class="centers" bindtap="navTo" data-url="">
+        <image src="../../images/index/c2.png" mode="widthFix"></image>
+        <view>福利购</view>
+        <text decode="true">&ensp;</text>
+      </view>
+      <view class="centers" bindtap="navTo" data-url="">
+        <image src="../../images/index/c3.png" mode="widthFix"></image>
+        <view>团购</view>
+        <text decode="true">一起拼单省运费</text>
+      </view>
+    </view>
+    <!-- <view class="TopCenterThree" bindtap="navTo" data-url="/pages/webview/webview" data-type="navTo">
+      <view>
+        <p>提升品质生活</p>
+        <p>一起精致且热爱吧</p>
+      </view>
+      <image src="../../images/index/ccc.png" mode="widthFix"></image>
+    </view> -->
+    <view class="TopCenterFore" wx:for="{{news_item}}" bindtap="navTo" data-url="/pages/webview/webview" data-datas="{{item.url}}" data-type="navTo">
+      <image src="{{item.thumb_url}}" style="width: 220rpx;height: 160rpx;border-radius: 16rpx;"></image>
+      <view class="lefts">
+        <view class="bigtitle">{{item.author}}</view>
+        <view class="title">{{item.digest}}</view>
+      </view>
+    </view>
+  </view>
+</view>

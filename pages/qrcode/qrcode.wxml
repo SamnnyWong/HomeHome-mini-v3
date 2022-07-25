@@ -1,0 +1,21 @@
+<!--pages/qrcode/qrcode.wxml-->
+<!-- <button bindtap="clearStorage">一键remake</button> -->
+
+<!-- <button bindtap="logout">一键logout</button>
+<button bindtap="createQRCode">draw qr binarycode</button> -->
+
+<!-- <qr-container text="{{qrTxt}}" size="750"></qr-container> -->
+<!-- <canvas> </canvas> -->
+<view class="container">
+  <view class="box">
+    <image style="width: 400rpx;margin-top: 100rpx;" mode="widthFix" src="../../images/index/homehome.png">
+    </image>
+    <view class="content">
+      <view>积分明细</view>
+      <view class="fenge"></view>
+      <view>积分规则</view>
+    </view>
+  </view>
+  <canvas type="2d" style="width: 350rpx;height: 350rpx;position: fixed;top: 400rpx;" id="myQrcode"></canvas>
+  <view style="color: green;position: fixed;top: 800rpx;">HOMEHOME商城会员码</view>
+</view>

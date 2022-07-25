@@ -1,0 +1,30 @@
+<view class="box">
+	<view class="cu-bar tabbar">
+		<view class="action tu {{selected === 0 ? 'active' : 'default'}}" data-index="0" bindtap="switchTab">
+      <image src="../images/tabbar/a8.svg" style="width: 54rpx;height: 54rpx;" wx:if="{{selected === 0}}"></image>
+      <image src="../images/tabbar/a1.svg" style="width: 54rpx;height: 54rpx;" wx:else></image>
+      <view>首页</view>
+		</view>
+		<view class="action tu {{selected === 1 ? 'active' : 'default'}}" data-index="1" bindtap="switchTab">
+			<!-- <view class="cuIcon-discover"></view> -->
+      <image src="../images/tabbar/a7.svg" style="width: 54rpx;height: 54rpx;" wx:if="{{selected === 1}}"></image>
+      <image src="../images/tabbar/a6.svg" style="width: 54rpx;height: 54rpx;" wx:else></image>
+      <view>分类</view>
+		</view>
+		<view class="action add-action {{selected === 2 ? 'active' : 'default'}}" data-index="2" bindtap="switchTab">
+			<button class="cu-btn cuIcon-ewm" style="width: 92rpx;height: 92rpx;line-height: 92rpx;margin-top: -10rpx;background: #295f45;color: white;">
+      </button>
+		</view>
+		<view class="action tu {{selected === 3 ? 'active' : 'default'}}" data-index="3" bindtap="switchTab">
+      <image src="../images/tabbar/a5.svg" style="width: 54rpx;height: 54rpx;" wx:if="{{selected === 3}}"></image>
+      <image src="../images/tabbar/a4.svg" style="width: 54rpx;height: 54rpx;" wx:else></image>
+      <view class="cu-tag badge" style="margin-right: 40rpx !important;color: white;{{selected !== 3?'background: rgba(220, 220, 220, 1);':''}}" wx:if="{{jiaoNums>0}}">{{jiaoNums}}</view>
+			<view style="margin-left: 10rpx;">购物车</view>
+		</view>
+		<view class="action tu {{selected === 4 ? 'active' : 'default'}}" data-index="4" bindtap="switchTab">
+      <image src="../images/tabbar/a3.svg" style="width: 54rpx;height: 54rpx;" wx:if="{{selected === 4}}"></image>
+      <image src="../images/tabbar/a2.svg" style="width: 54rpx;height: 54rpx;" wx:else></image>
+			<view>我的</view>
+		</view>
+	</view>
+</view>
