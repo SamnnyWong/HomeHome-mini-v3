@@ -1,0 +1,40 @@
+/* pages/qrcode/qrcode.wxss */
+page {
+  background-color: rgb(255, 255, 255) !important;
+<<<<<<< HEAD
+}
+.container{
+  display: flex;
+=======
+  overflow: hidden;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  width: 100%;
+  height: auto;
+  background: rgba(211, 234, 225, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100rpx;
+}
+.content{
+  width: 400rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 32rpx;
+  margin-top: 48rpx;
+}
+.fenge{
+  width: 2rpx;
+  height: 24rpx;
+  background: #333;
+>>>>>>> 7178bb9 (1.0.0正式版)
+}

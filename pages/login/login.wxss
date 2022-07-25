@@ -1,0 +1,85 @@
+/* pages/login/login.wxss */
+page{
+  background: white !important;
+  position: relative;
+}
+.model{
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, .2);
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.model_box{
+  position: relative;
+  background: white;
+  border-radius: 60rpx;
+  width: 600rpx;
+  height: 460rpx;
+  margin-top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  margin-top: 200rpx;
+}
+.login{
+  margin-top: 150rpx;
+  color: white;
+  background-color: #295f45;
+  width: 700rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  text-align: center;
+  border-radius: 60rpx;
+}
+.nochange{
+  color: #295f45;
+  margin-top: 40rpx;
+  border: 1rpx solid #295f45;
+  width: 700rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 60rpx;
+}
+.shouquan{
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.bindshouquan{
+  margin-top: 20rpx;
+  width: 90%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #295f45;
+  color: white;
+  border-radius: 50rpx;
+}
+.yuedu_parent{
+  margin-top: 24rpx;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+}
+.yuedu{
+  margin-left: 12rpx;
+}
+.red{
+  color: red;
+}
+.green{
+  color: #295f45;
+}

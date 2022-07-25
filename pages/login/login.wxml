@@ -1,0 +1,19 @@
+<view class="box">
+  <image src="/images/profile-head.jpg" class="logo" style="width: 600rpx;" mode="widthFix"></image>
+  <view class="login" bindtap="getStatus" wx:if="{{!checked}}">微信手机号快捷登录</view>
+  <button class="login" wx:if="{{checked}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信手机号快捷登录</button>
+  <view class="nochange" bindtap="nologin">取消</view>
+  <view class="yuedu_parent">
+    <checkbox-group bindchange="checkboxChange">
+      <checkbox class="round green" value="checs" checked="{{checked}}"></checkbox>
+    </checkbox-group>
+    <span class="yuedu">我已阅读并同意<span class="green" bindtap="GotoAgreement">《xxx协议》</span></span>
+  </view>
+  <view class="model" wx:if="{{loginInfo == true}}" bindtap="noModel">
+    <view class="model_box" catchtap='navmap'>
+        <image src="../../images/nologin.png" style="width: 120rpx;margin-bottom: 50rpx;" mode="widthFix"></image>
+        <view class="shouquan">授权微信昵称和头像</view>
+        <view class="bindshouquan" bindtap="getUserInfo">获取头像昵称</view>
+    </view>
+  </view>
+</view>

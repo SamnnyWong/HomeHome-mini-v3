@@ -1,0 +1,39 @@
+.score {
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;  
+<<<<<<< HEAD
+  padding-top:50rpx;
+  height: 150rpx;
+=======
+  padding: 50rpx 0;
+>>>>>>> 7178bb9 (1.0.0正式版)
+  background-color: #e85654;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color:#fff;
+}
+
+.no-data {
+  margin-top: 100rpx;
+  text-align: center;
+  font-size: 13px;
+  color:#ccc;
+}
+
+.cashlogs {
+  display: flex;
+  font-size: 12px;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+  line-height: 20px;
+}
+.cashlogs .profile {
+  width:600rpx;
+  padding-left: 30rpx;
+}
+.cashlogs .amount {
+  width:150rpx;
+}

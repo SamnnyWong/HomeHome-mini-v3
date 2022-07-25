@@ -1,0 +1,9 @@
+{
+<<<<<<< HEAD
+    "navigationBarTitleText": "订单列表",
+=======
+    "navigationBarTitleText": "我的订单",
+>>>>>>> 7178bb9 (1.0.0正式版)
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#295f45"
+}

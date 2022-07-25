@@ -1,0 +1,41 @@
+<!--pages/oderinfo/oderinfo.wxml-->
+<view class="box">
+  <view class="cards">
+    <view class="flex jusbet">
+      <span>HomeHome商城</span>
+      <span class="reds">{{orderStatusList[orderInfo.orderStatus]}}</span>
+    </view>
+    <view class="fenge"></view>
+    <view class="secend" wx:for="{{orderInfo.items}}">
+      <span class="flex">
+        <image src="/images/face.png" style="width: 150rpx;height: 100rpx"></image>
+        <view>{{item.name}}</view>
+      </span>
+      <span>￥{{item.retailPrice}} <span class="small">X{{item.amount}}</span></span>
+    </view>
+    <view class="fenge"></view>
+    <view class="flex jusbet margin-top align-center">
+      <span>订单编号：</span>
+      <span class="gray">{{orderInfo._id}}<span class="fuzhi" bindtap="fuzhi" data-id="{{orderInfo._id}}">复制</span></span>
+    </view>
+    <view class="flex jusbet margin-top align-center">
+      <span>创建时间：</span>
+      <span class="gray">{{orderInfo.createdAt}}</span>
+    </view>
+    <view class="flex jusbet margin-top align-center">
+      <span>付款时间：</span>
+      <span class="gray">{{orderInfo.updatedAt}}</span>
+    </view>
+    <view class="flex jusbet margin-top">
+      <span>实付款:</span>
+      <span>￥<span class="blod">{{orderInfo.orderSum}}</span></span>
+    </view>
+    <view class="flex jusbet margin-top" wx:if="{{orderInfo.orderStatus == 0}}">
+      <span></span>
+      <span bindtap="jiesuan" data-orderID="{{orderInfo._id}}" class="fukuan">去付款</span>
+    </view>
+  </view>
+</view>
+<button class="fixed" open-type="contact">
+  <van-icon name="service-o" style="font-size: 42rpx;" />
+</button>

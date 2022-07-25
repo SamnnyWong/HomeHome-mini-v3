@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+
+<web-view src="https://baidu.com"></web-view>
+=======
+<web-view src="{{src}}"></web-view>
+>>>>>>> 7178bb9 (1.0.0正式版)

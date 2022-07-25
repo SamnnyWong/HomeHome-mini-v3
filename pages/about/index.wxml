@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+<van-empty wx:if="{{!cmsPageDetail}}" description="请在后台添加内容" />
+<view wx:else class="content">
+  <parser html="{{cmsPageDetail.info.content}}" />
+</view>
+=======
+<!-- <van-empty wx:if="{{!cmsPageDetail}}" description="请在后台添加内容" />
+<view wx:else class="content">
+  <parser html="{{cmsPageDetail.info.content}}" />
+</view> -->
+<view class="content">HOMEHOME商城</view>
+>>>>>>> 7178bb9 (1.0.0正式版)

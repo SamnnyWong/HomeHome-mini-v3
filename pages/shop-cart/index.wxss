@@ -1,0 +1,48 @@
+@import "../template-cart/template-cart.wxss";
+page{
+  min-height: 100%;
+  background-color: #F2f2f2;
+<<<<<<< HEAD
+=======
+  padding-bottom: 180rpx;
+>>>>>>> 7178bb9 (1.0.0正式版)
+}
+.container {
+  background-color: #F2f2f2;
+  min-height: 100%;
+}
+.pos-fiexd{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.vtabs{
+  width: 100vw;
+<<<<<<< HEAD
+=======
+}
+.buttom{
+  position: fixed;
+  bottom: 145rpx;
+  right: 0;
+  width: 750rpx;
+  height: 120rpx;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 32rpx;
+}
+.money{
+  font-size: 38rpx;
+  color: rgb(255, 60, 0);
+}
+.jiesuan{
+  padding: 16rpx 42rpx;
+  color: white;
+  font-weight: 600;
+  margin-left: 12rpx;
+  background-color: rgb(255, 60, 0);
+  border-radius: 32rpx;
+>>>>>>> 7178bb9 (1.0.0正式版)
+}
